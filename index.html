@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type = "text/css" href="css/superslides.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type = "text/css" href="css/style.css">  
+    <link rel="stylesheet" type = "text/css" href="css/owl.carousel.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+
+
+    <div id="slides">
+        <div class="overlay"></div>
+
+        <div class="slides-container">
+            <img src="img/slide1.jpg" alt="">
+            <img src="img/slide2.jpg" alt="">
+            <img src="img/slide3.jpg" alt="">
+        </div>
+
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">GUSTAVO COUTIÑO</p>
+                <p class="sub typed"></p>
+            </div>
+        </div>
+        
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Sections</a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+          </ul>
+        </div>
+  
+      </nav>
+  
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="img/about.jpg">
+                </div>
+
+                <div class="col-md-7">
+                    <h4>My Goals and Experience</h4>
+                    <p>Hello! My name is Gustavo Coutiño, I'm from Tamaulipas, Mexico. I am a student at ITESM in Monterrey. I started
+                    coding in high school when I was a sophomore, and I began learning with the programming language Java. I took AP courses that 
+                    would strengthen my knowledge of computer science, and since then I have been exploring different languages
+                    such as Python, Flutter, C++, Javascript, and the aforementioned Java, which is my favorite. 
+                    </p>
+                    <p>I participated in a national event organized by the university ITAM, the 2021 Coding Rush in which I obtained
+                        second place, and recently attended the most popular coding contest in Mexico, HackMTY. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skillsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representation of my abilities in each skill</p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart" data-percent="67">
+                            <span class="percent">70</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                       <h4>Java</h4> 
+                       <p>Used in the desktop based applications I have developed</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="80">
+                            <span class="percent">80</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                       <h4>HTML</h4> 
+                       <p>Used in all of my web based projects along other web frameworks</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="75">
+                            <span class="percent">75</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                       <h4>Python</h4> 
+                       <p>Used consistently with HTML and other APIs to develop applications</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="43">
+                            <span class="percent">43</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                       <h4>Javascript</h4> 
+                       <p>Used mostly with HTML for scripts and ocassionally with Python</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="12">
+                            <span class="percent">12</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                       <h4>Flask</h4> 
+                       <p>Used it scarcely to test different ways to render websites</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="stats" class="statsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa-solid fa-folder"></i>
+                                 
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">5</h2>
+                                <h3>Personal Projects </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa-regular fa-window-restore"></i>
+                                 
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">3</h2>
+                                <h3>Websites Created</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa-regular fa-calendar"></i>
+                                 
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">2</h2>
+                                <h3>Years studying</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading">Wanna talk?</p>
+            <h2>Send me an email!</h2>
+            <a href="mailTo:gcoutino04@gmail.com" class="contactButton">Generate email</a>
+        </div>
+    </div>
+    
+    <div id="portfolio" class="section">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="heading">
+					<h2>PORTFOLIO</h2>
+				</div>  
+				<div class="filter">
+
+					<ul id="filters">
+
+						<li><a href="#" data-filter="*" class="current">ALL</a></li>
+						<li><a href="#" data-filter=".apps">Apps</a></li>
+						<li><a href="#" data-filter=".websites">Websites</a></li>
+
+					</ul>
+
+				</div>
+
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/donar-square.jpg">
+                                <div class="icons">
+                                    <a href="img/portfolio/donar.jpg" title="viewImage" class="openButton" data-fancybox data-caption="Donations website created with HTML, CSS, Javascript, and the Airtable database.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/GusavoCoutino/PaginaFinal" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            
+                            </div>
+                        </li>
+
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/youtube-square.jpg">
+                                <div class="icons">
+                                    <a href="img/portfolio/youtube.jpg" title="viewImage" class="openButton" 
+                                    data-fancybox data-caption="Python application that uses TKinter and the Youtube API to get the duration of a playlist and its five most viewed videos.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/GusavoCoutino/pythonYoutubeAPI" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/pythonFlask-square.jpg">
+                                <div class="icons">
+                                    <a href="img/portfolio/pythonFlask.jpg" title="viewImage" class="openButton" 
+                                    data-fancybox data-caption="Web application created using Python, Flask and HTML. Records tasks added by a user, can edit them, and delete them.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/GusavoCoutino/FlaskProject" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/calculator-square.jpeg">
+                                <div class="icons">
+                                    <a href="img/portfolio/calculator.jpg" title="viewImage" class="openButton" 
+                                    data-fancybox data-caption="Simple calculator app created using Java.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/GusavoCoutino/CalculatorReal" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolio/thumbnails/volcano-square.jpg">
+                                <div class="icons">
+                                    <a href="img/portfolio/volcano.jpg" title="viewImage" class="openButton" 
+                                    data-fancybox data-caption="Simulation of the trayectory of a rock expelled by a volcano using Matlab.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="https://github.com/GusavoCoutino/VolcanoSimulation" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy;Copyright Gustavo Coutiño 2022<p>
+        </div>
+    </div>
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="js/countUp.js"></script>
+<script src="js/countUp-jquery.js"></script>
+<script src="https://kit.fontawesome.com/b5808ce0ec.js" crossorigin="anonymous"></script>
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html
